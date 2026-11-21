@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="zoom_entries">
+        <item>Small</item>
+        <item>Normal</item>
+        <item>Large</item>
+        <item>Extra large</item>
+    </string-array>
+    <string-array name="zoom_values">
+        <item>80</item>
+        <item>100</item>
+        <item>125</item>
+        <item>150</item>
+    </string-array>
+</resources>

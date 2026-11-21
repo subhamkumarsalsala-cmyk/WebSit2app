@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Display">
+        <SwitchPreference android:key="desktop_mode" android:title="Desktop mode" android:summary="Website ko computer version me kholo" android:defaultValue="false"/>
+        <SwitchPreference android:key="force_dark" android:title="Dark mode for websites" android:summary="Website ko dark dikhao (Android 10+)" android:defaultValue="false"/>
+        <ListPreference android:key="text_zoom" android:title="Text size" android:summary="%s" android:entries="@array/zoom_entries" android:entryValues="@array/zoom_values" android:defaultValue="100"/>
+        <SwitchPreference android:key="pinch_zoom" android:title="Pinch to zoom" android:summary="Do ungli se zoom karna" android:defaultValue="true"/>
+        <SwitchPreference android:key="fullscreen" android:title="Fullscreen" android:summary="Status bar aur navigation bar chhupao" android:defaultValue="false"/>
+        <SwitchPreference android:key="keep_screen_on" android:title="Keep screen on" android:summary="App khula ho to screen band na ho" android:defaultValue="false"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Navigation">
+        <SwitchPreference android:key="bottom_bar" android:title="Bottom bar" android:summary="Back, forward, home, refresh buttons" android:defaultValue="false"/>
+        <SwitchPreference android:key="menu_button" android:title="Floating menu button" android:summary="Bottom bar band ho to chhota menu button dikhao" android:defaultValue="true"/>
+        <SwitchPreference android:key="pull_refresh" android:title="Pull to refresh" android:summary="Neeche kheench kar page reload karo" android:defaultValue="true"/>
+        <SwitchPreference android:key="external_browser" android:title="External links in browser" android:summary="Dusri websites ke links browser me kholo" android:defaultValue="false"/>
+        <SwitchPreference android:key="exit_confirm" android:title="Press back twice to exit" android:summary="Galti se band hone se bachao" android:defaultValue="true"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Content">
+        <SwitchPreference android:key="javascript" android:title="JavaScript" android:summary="Band karne par kai websites kaam nahi karti" android:defaultValue="true"/>
+        <SwitchPreference android:key="block_images" android:title="Block images" android:summary="Data bachane ke liye images mat load karo" android:defaultValue="false"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Privacy">
+        <Preference android:key="clear_cache" android:title="Clear cache" android:summary="Saved files aur data hatao"/>
+        <Preference android:key="clear_cookies" android:title="Clear cookies and logins" android:summary="Saari websites se logout ho jaoge"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="About">
+        <Preference android:key="about" android:title="Version" android:selectable="false"/>
+    </PreferenceCategory>
+</PreferenceScreen>

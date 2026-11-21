@@ -1,0 +1,11 @@
+{
+  "app_name": "My Web App",
+  "site_url": "https://example.com",
+  "theme_color": "#2563EB",
+  "orientation": "auto",
+  "fullscreen": false,
+  "pull_to_refresh": true,
+  "keep_screen_on": false,
+  "desktop_mode": false,
+  "external_in_browser": false
+}
